@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: api-gateway
+  config:
+    import: "optional:configserver:http://localhost:8088"
+  cloud:
+    gateway:
+      routes:
+        - id: anime-service
+          uri: lb://anime-service
+          predicates:
+            - Path=/anime/**
+          filters:
+            - AuthenticationFilter
+
+        - id: review-service
+          uri: lb://review-service
+          predicates:
+            - Path=/reviews/**
+          filters:
+            - AuthenticationFilter
+
+        - id: auth-service
+          uri: lb://auth-service
+          predicates:
+            - Path=/auth/**
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
