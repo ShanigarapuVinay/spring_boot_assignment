@@ -34,7 +34,9 @@
 		<sonar.projectKey>vinay-shanigarapu_spring-boot-assignment-review</sonar.projectKey>
 		<sonar.exclusions>**/com/vinay/spring_boot_assignment/review_service/model/**,
 			**/com/vinay/spring_boot_assignment/review_service/repository/**,
-			**/com/vinay/spring_boot_assignment/review_service/util/**		</sonar.exclusions>
+			**/com/vinay/spring_boot_assignment/review_service/util/**,
+			**/com/vinay/spring_boot_assignment/review_service/ReviewServiceApplication.java
+		</sonar.exclusions>
 	</properties>
 	<dependencies>
 
