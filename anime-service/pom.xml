@@ -36,9 +36,7 @@
 			**/com/vinay/spring_boot_assignment/anime_service/model/**,
 			**/com/vinay/spring_boot_assignment/anime_service/dto/**,
 			**/com/vinay/spring_boot_assignment/anime_service/repository/**,
-			**/com/vinay/spring_boot_assignment/anime_service/util/**,
-			**/com/vinay/spring_boot_assignment/anime_service/AnimeServiceApplication.java
-		</sonar.exclusions>
+			**/com/vinay/spring_boot_assignment/anime_service/util/**		</sonar.exclusions>
 	</properties>
 	<dependencies>
 
